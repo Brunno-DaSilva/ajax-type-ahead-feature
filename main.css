@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css?family=Rock+Salt&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web&display=swap");
+
+:root {
+  --main-bg: #343d46;
+  --color-light: #f7f4f4;
+  --color-light-gray: #a7adba;
+  --color-title: #6a7687;
+  --color-steal-blue: #9dc1d9;
+  --details-light-blue: #bee0ea;
+  --base: #2b498b;
+  --dark-font-color-title: #173f5f;
+  --nave-light-blue: #20639b;
+  --teal-green: #3caea3;
+  --farting-yellow: #f6d55c;
+  --laranja-orange: #ed553b;
+  --light-font-color: #e5f2fc;
+  --light-font-color-title: #c9dded;
+  --gray-neutral-color: #63717d;
+}
+
+html {
+  box-sizing: border-box;
+  background: #ffc600;
+  font-family: "helvetica neue";
+  font-size: 20px;
+  font-weight: 200;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  background: white;
+  color: var(--base);
+  font-family: "helvetica neue", sans-serif;
+  font-weight: 80;
+  font-size: 3rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/*******************************
+*  START - Navigation Style    
+*******************************/
+
+.navbar {
+  height: 65px;
+  background-color: var(--base);
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid var(--details-light-blue);
+  padding: 20px !important;
+  z-index: 20;
+}
+
+.navbar img {
+  width: 25px;
+  height: auto;
+}
+.navbar a {
+  text-decoration: none;
+  color: var(--color-light);
+  letter-spacing: 1px;
+  padding: 20px;
+  font-size: 1rem;
+  font-family: "Muli", sans-serif;
+}
+.navbar a:hover {
+  color: var(--color-light-gray);
+}
+
+.navbar-items {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.title h1 {
+  font-family: "Shadows Into Light Two", cursive;
+  text-align: center;
+  font-size: 3rem !important;
+  color: var(--color-title);
+}
+
+.title h1 i {
+  color: var(--details-light-blue);
+}
+
+
+/*******************************
+*    END - Navigation Style    
+*******************************/
+
+
+
+
+/*******************************
+*    Main Container Style
+*******************************/
+
+input {
+  width: 100%;
+  padding: 20px;
+}
+
+.search-form {
+  max-width: 400px;
+  margin: 50px auto;
+}
+
+input.search {
+  margin: 0;
+  text-align: center;
+  outline: 0;
+  border: 10px solid #F7F7F7;
+  width: 120%;
+  left: -10%;
+  position: relative;
+  top: 10px;
+  z-index: 2;
+  border-radius: 5px;
+  font-size: 40px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.12), inset 0 0 2px rgba(0, 0, 0, 0.19);
+}
+
+.suggestions {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  /*perspective: 20px;*/
+}
+
+.suggestions li {
+  background: white;
+  list-style: none;
+  border-bottom: 1px solid #D8D8D8;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.14);
+  margin: 0;
+  padding: 20px;
+  transition: background 0.2s;
+  display: flex;
+  justify-content: space-between;
+  text-transform: capitalize;
+  font-size: 1rem;
+}
+
+.suggestions li:nth-child(even) {
+  transform: perspective(100px) rotateX(3deg) translateY(2px) scale(1.001);
+  background: linear-gradient(to bottom,  #ffffff 0%,#EFEFEF 100%);
+}
+
+.suggestions li:nth-child(odd) {
+  transform: perspective(100px) rotateX(-3deg) translateY(3px);
+  background: linear-gradient(to top,  #ffffff 0%,#EFEFEF 100%);
+}
+
+span.population {
+  font-size: 15px;
+}
+
+.hl {
+  background: #ffc600;
+}
+
+/*******************************
+*     Footer and SVG
+*******************************/
+svg {
+  margin-bottom: -35px;
+  z-index: 5;
+}
+footer {
+  font-family: "Shadows Into Light Two", cursive;
+  min-height: 30vh;
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: auto;
+  background-color: var(--nave-light-blue);
+  z-index: 6;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+footer span {
+  color: var(--farting-yellow);
+}
+footer img {
+  width: 90px;
+  height: auto;
+}
+
+footer .info-Bruno {
+  width: 70%;
+  padding: 20px;
+  text-align: center;
+}
+
+.info-Bruno p {
+  color: var(--light-font-color-title);
+  font-size: 1.8rem;
+}
+
+.info-Bruno a {
+  color: var(--light-font-color-title);
+  padding: 10px;
+}
+
+.info-Bruno a:hover {
+  color: var(--farting-yellow);
+}
