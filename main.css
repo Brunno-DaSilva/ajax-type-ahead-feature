@@ -111,6 +111,9 @@ body {
 /*******************************
 *    Main Container Style
 *******************************/
+.container{
+  min-height: 100vh; 
+}
 
 input {
   width: 100%;
